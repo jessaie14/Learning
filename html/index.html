@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titre de la page -->
+    <title>Cours html</title>
+    <!-- Icone de l'onglet -->
+    <link rel="shortcut Icon" href="images/logo.png" />
+  </head>
+  <body>
+    <header></header>
+    <section>
+      <div>
+        <h1>Texte - Titre - H1</h1>
+        <p>
+          Texte basique. <em>Voici italique.</em>
+          <strong>et le bout de gras.</strong>
+          <span>L'élément ne revient pas à la ligne </span> Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Nulla quas magni repellat,
+          suscipit laudantium omnis mollitia hic aut eius totam nemo sint
+          repudiandae id sed eaque culpa facilis eveniet voluptates.
+        </p>
+      </div>
+      <div>
+        <h2>Titre - H2</h2>
+      </div>
+      <img src="images/Cyborg glitch.png" height="200" alt="cyborg-glitch" />
+      <div>
+        <h3>Listes - H3</h3>
+        <ul>
+          <li>UL = unordered list</li>
+          <li>ok</li>
+        </ul>
+        <ol>
+          <li>OL = ordered list</li>
+          <li>yeah</li>
+        </ol>
+      </div>
+      <div>
+        <h4>Tableaux</h4>
+        <table border="1" width="50%">
+          <!-- Légende -->
+          <caption>
+            Populations d'europe
+          </caption>
+          <!-- Entête -->
+          <thead>
+            <tr>
+              <th>Pays</th>
+              <th>Populations</th>
+            </tr>
+          </thead>
+          <!-- Corps du tableau -->
+          <tbody>
+            <tr>
+              <td>France</td>
+              <td>66M</td>
+            </tr>
+            <tr>
+              <td>Allemagne</td>
+              <td>82M</td>
+            </tr>
+            <tr>
+              <td>Espagne</td>
+              <td>45M</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h5><span>&#9728;</span>Liens - H5</h5>
+        <a href="http://htmlcheatsheet.com" target="_blank">
+          HTML cheat sheet</a
+        >
+        <br />
+        <a
+          href="https://www.toptal.com/designers/htmlarrows/symbols"
+          target="_blank"
+        >
+          Icones natives à HTML</a
+        >
+      </div>
+      <div>
+        <h6>Vidéo - H6</h6>
+        <video
+          src="images/Samurai.mp4"
+          height="400"
+          autoplay
+          loop
+          muted
+        ></video>
+      </div>
+    </section>
+    <br>
+    <!-- Formulaires -->
+    <section>
+      <h2>Formulaires</h2>
+      <form action="/action.php" method="post">
+        <label for="name">Nom</label>
+<input id="name" type="text" placeholder="Entrez votre nom"> <br> <br>
+<label for="age">Age</label>
+<input id="Age" type="number" min="0" max="99" step="2">
+<!-- Input type select -->
+<div>
+<label for="Gender">Genre</label>
+<select id="Gender">
+<option value="Male">Homme</option>
+<option value="Femele">Femme</option>
+</select> <br><br>
+</div>
+<!-- Input type radiot -->
+<div>
+  <label for="Dog">Chien</label>
+  <input id="Dog" checked name="type" type="radio">
+
+  <label for="Human">Humain</label>
+  <input id="Human" name="type" type="radio">
+
+  <label for="Cat">Chat</label>
+  <input id="Cat" name="type" type="radio">
+</div>
+<!-- Zone de texte -->
+<textarea cols="30" rows="10" placeholder="Entrez votre demande ici"></textarea>
+<br><br>
+<!-- Input Checkbox -->
+<label><input type="Checkbox">Acceptez les CGV</label> <br>
+<!-- Input bouton -->
+<input type="submit" Value="Valider"/><br><br>
+      </form>
+    </section>
+    <!-- Mail et envoie de fichiers -->
+    <footer>
+      <a href="mailto:baba@gmail.com">Ecrivez-moi !</a> <br>
+      <a href="notice.txt" download="nom-du-fichier">télécharger la notice</a>
+    </footer>
+  </body>
+</html>
