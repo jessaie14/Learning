@@ -1,0 +1,141 @@
+/* Général*/
+
+:root {
+  --color1: rgb(254, 235, 201);
+  --color2: rgb(224, 243, 176);
+  --color3: rgb(191, 213, 232);
+  --color4: rgb(253, 222, 238);
+  --background: rgba(110, 116, 116, 0.849);
+}
+
+@font-face {
+  font-family: "Lobster Regular";
+  src: url(./Lobster-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  overflow: hidden;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 55px;
+}
+
+.button1,
+.button2,
+.button3 {
+  align-items: center;
+  background-image: linear-gradient(
+    144deg,
+    var(--color1),
+    var(--color2) 50%,
+    var(--color3)
+  );
+
+  border: 0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: black;
+  display: flex;
+  font-family: Lobster Regular, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  z-index: 3;
+}
+
+.button1:active,
+.button2:active,
+.button3:active {
+  outline: 0;
+}
+
+.button1:hover,
+.button2:hover,
+.button3:hover {
+  outline: 0;
+}
+
+.button1 span,
+.button2 span,
+.button3 span {
+  background-color: var(--color4);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button1:hover span,
+.button2:hover span,
+.button3:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button1,
+  .button2,
+  .button3 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+.button1 {
+  right: 10px;
+}
+
+.button2 {
+  right: 220px;
+}
+
+.button3 {
+  right: 500px;
+}
+
+/* Main
+Général */
+body {
+  font-family: "Lobster Regular", serif;
+  background: url(./Fond3.png) center/cover;
+}
+
+p {
+  font-size: 1.7rem;
+  font-weight: 200;
+  color: var(--color4);
+  text-shadow: 2px 2px 0px black;
+}
+
+h2 {
+  color: var(--color1);
+  text-shadow: 2px 2px 0px black, 4px 4px 0px var(--color3),
+    4px 4px 6px var(--color4);
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+/* Footer */
